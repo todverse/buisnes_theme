@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Макет 2</title>
+		<link type="text/css" rel="stylesheet" href="style.css">
+		<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+        <script src="https://code.jquery.com/jquery-migrate-3.3.2.js"></script>
+		<script src="change_laptop.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<img src="images/logo.png">
+			<ul>
+				<a href="#header"><li id="home_li">HOME</li></a>
+				<a href="#service"><li id="service_li">SERVICE</li></a>
+				<a href="#about"><li id="about_li">ABOUT US</li></a>
+				<a href="#price_table"><li id="pricing_li">PRICING TABLE</li></a>
+				<a href="#how_work"><li id="how_li">HOW IT WORK</li></a>
+				<a href="#happy"><li id="happy_li">HAPPY CLIENTS</li></a>
+				<a href="#contact_us"><li id="contact_li">CONTACT US</li></a>
+			</ul>
+		</header>
+
+		<div id="banner">
+			<h1>BOOST UP YOUR LOCAL BUISNESS</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p>
+			<form method="GET">
+				<input class="name" type="text" autocomplete="off" placeholder="Full Name">
+				<input class="mail" type="email" autocomplete="off" placeholder="E-mail Adress">
+				<input id="telephone" type="tel" autocomplete="off" placeholder="Phone Number">
+				<input class="submit" type="submit" value="REGUEST A QUOTE">
+			</form>
+			<img id="laptop" src="images/laptop.png" width="38%">
+			<img id="img" src="images/img_slider.jpg" width="26%">
+		<div id="radio">
+			<input type="radio" name="radio" value="1" id="radio1" checked onclick="var i = document.getElementById('img');
+i.src = 'images/img_slider.jpg';">
+			<input type="radio" name="radio" value="2" id="radio2" onclick="var i = document.getElementById('img');
+i.src = 'images/img_slider2.jpg'";>
+			<input type="radio" name="radio" value="3" id="radio3" onclick="var i = document.getElementById('img');
+i.src = 'images/img_slider3.jpg';">
+		</div>
+		    <button id="changeDown" onclick="changeDown()">
+		    <button id="changeUp" onclick="changeUp()">
+		</div>
+
+		<div id="service">
+			<h1>OUR SERVICE</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			<table>
+				<tr>
+					<td><img src="images/font_awesome.png" class="rightly"><h1>FONT-AWESOME ICONS</h1> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+					 Lorem Ipsum typesetting</p></td>
+					<td><img src="images/fully.png" class="rightly"><h1>FULLY RESPONSIVE DESIGN</h1> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+					 Lorem Ipsum typesettingLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting</p></td>
+				</tr>
+				<tr>
+					<td><img src="images/working.png"><h1>WORKING CONTACT FORM</h1> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+					 Lorem Ipsum typesetting</p></td>
+					<td><img src="images/retina.png"><h1>RETINA READY ICONS HERE</h1> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesettingLorem Ipsum is simply dummy text of the printing and typesetting industry.<br> Lorem Ipsum typesetting</p></td>
+				</tr>
+				<tr>
+					<td><img src="images/friendly.png"><h1>FRIENDLY CODE</h1> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesetting Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+					 Lorem Ipsum typesetting</p></td>
+					<td><img src="images/flat.png"><h1>FLAT TRENDY LANDING PAGE DESIGN</h1> <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesettingLorem Ipsum is simply dummy text of the printing and typesetting industry.<br>
+					 Lorem Ipsum typesetting</p></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="about">
+			<img src="images/background_about.jpg" width="50%">
+			<h1>ABOUT US</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesettingLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesettingLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesettingLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum typesettingLorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+			<button>READ MORE!</button>
+		</div>
+
+		<div id="pricing">
+			<h1 class="oftop_price" id="price_table">CHOOSE YOUR PRICE</h1>
+			<p class="oftop_price">Lorem Ipsum is simply dummy text of the printing</p>
+			<div id="basic">
+				<h1>BASIC PLAN</h1>
+				<img src="images/basic.png">
+				<hr>
+				<p>1 ACCAUNT</p>
+				<hr>
+				<p>8 HOURS SUPPORT</p>
+				<hr>
+				<p>CUSTOM CLOUD SERVICE</p>
+				<button class="button_price">GET STARTED!</button>
+			</div>
+			<div id="premium">
+				<h1>PREMIUM PLAN</h1>
+				<img src="images/premium.png">
+				<hr>
+				<p>2 ACCAUNT</p>
+				<hr>
+				<p>100 MB STORAGE</p>
+				<hr>
+				<p>CUSTOM CLOUD SERVICE</p>
+				<button class="button_price">GET STARTED!</button>
+			</div>
+			<div id="gold">
+				<h1>GOLD PLAN</h1>
+				<img src="images/gold.png">
+				<hr>
+				<p>8 ACCAUNT</p>
+				<hr>
+				<p>24 HOURS SUPPORT</p>
+				<hr>
+				<p>CUSTOM CLOUD SERVICE</p>
+				<button class="button_price">GET STARTED!</button>
+			</div>
+		</div>
+
+		<div id="how_work">
+			<h1>HOW IT WORK</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing</p>
+			<table>
+				<tr>
+					<td><img src="images/step1.png"></td>
+					<td><img src="images/step2.png"></td>
+					<td><img src="images/step3.png"></td>
+					<td><img src="images/step4.png"></td>
+				</tr>
+				<tr>
+					<td>
+						<h2>STEP 1</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing</p>
+					</td>
+					<td>
+						<h2>STEP 2</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing</p>
+					</td>
+					<td>
+						<h2>STEP </h2>
+						<p>Lorem Ipsum is simply dummy text of the printing</p>
+					</td>
+					<td>
+						<h2>STEP 4</h2>
+						<p>Lorem Ipsum is simply dummy text of the printing</p>
+					</td>
+				</tr>
+			</table>
+			<button>GET START NOW</button>
+		</div>
+
+		<div id="happy">
+			<h1>HAPPY CLIENTS</h1>
+			<p>We are explain who is using our business solutions</p>
+			<table>
+				<tr>
+					<td><img src="images/proj_man.jpg" width="80px"><p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+ it to make."</p><p><span class="yellow">DRAWIN MICHAEL</span> PROJECT MANAGER</p></td>
+					<td><img src="images/creat_dir.jpg" width="80px"><p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+ it to make."</p><p><span class="yellow">MADAM ELISABATH</span> CREATE DIRECTOR</p></td>
+				</tr>
+				<tr>
+					<td><img src="images/lip_dir.jpg" width="80px"><p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+ it to make."</p><p><span class="yellow">CLIPS ARTER</span> LIPSUM DIRECTOR</p></td>
+					<td><img src="images/man.jpg" width="80px"><p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+ it to make."</p><p><span class="yellow">ZAM CRISTAFR</span> MANAGER</p></td>
+				</tr>
+			</table>
+		</div>
+
+		<div id="newsletter">
+			<h1>NEWSLETTER</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing</p>
+			<form>
+				<input class="name" type="text" placeholder="Name">
+				<input class="mail" type="email" placeholder="E-mail">
+				<input class="submit" type="submit" value="SUBCRIBE NOW!">
+			</form>
+		</div>
+
+		<div id="map">
+			
+				<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae149fc76ec398d55d67904604a1a5f30341a2ea47d5df4c9793694dd0295e1ec&amp;width=1000&amp;height=533&amp;lang=ru_RU&amp;scroll=true"></script>
+			
+		</div>
+		<nav>
+			<ul>
+				<a href="#header"><li id="home_li">HOME</li></a>
+				<a href="#service"><li id="service_li">SERVICE</li></a>
+				<a href="#about"><li id="about_li">ABOUT US</li></a>
+				<a href="#price_table"><li id="pricing_li">PRICING TABLE</li></a>
+				<a href="#how_work"><li id="how_li">HOW IT WORK</li></a>
+				<a href="#happy"><li id="happy_li">HAPPY CLIENTS</li></a>
+				<a href="#newsletter"><li id="contact_li">CONTACT US</li></a>
+		    </ul>
+	    </nav>
+
+		<div id="contact_us">
+			<h3><img src="images/tel.png">+987 9976 999</h3>
+			<table>
+				<tr>
+					<td><a href="https://twitter.com/" target="blank_"><img src="images/twitter.png"></a></td>
+					<td><a href="https://facebook.com/" target="blank_"><img src="images/facebook.png"></a></td>
+					<td><a href="https://google+.com/" target="blank_"><img src="images/google.png"></a></td>
+					<td><a href="" target="blank_"><img src="images/in.png"></a></td>
+				</tr>
+			</table>
+		</div>
+
+		<footer>
+			<p>All contents © copyright 2014 Business Theme. All rights reserved Designed by : akhilwebfolio</p>
+		</footer>
+	</body>
+</html>
